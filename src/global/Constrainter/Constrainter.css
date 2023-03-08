@@ -1,0 +1,8 @@
+.Constrainter {
+  display: flex;
+  justify-content: center;
+}
+
+.inner-constrainter {
+  width: 90%;
+}

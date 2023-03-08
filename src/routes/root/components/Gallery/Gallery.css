@@ -1,0 +1,88 @@
+.Gallery {
+  background: var(--main-green);
+  padding-left: 2em;
+}
+
+.carousel-wrapper {
+  padding-top: 2em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carousel-wrapper h2 {
+  margin: 0;
+}
+
+.carousel-container {
+  /* height: 10em; */
+  padding: 3em;
+  padding-top: 1em;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.carousel-container img {
+  max-height: 30em;
+  width: auto;
+  margin: 0 auto;
+}
+
+.carousel-image-container:focus {
+  outline: none;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--accent-green) !important;
+}
+
+.slick-dots li button:before {
+  color: var(--accent-green) !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--accent-green) !important;
+}
+
+@media (max-width: 1136px) {
+  .carousel-container {
+    padding: 1.5em;
+    width: 80%;
+  }
+
+  .carousel-container img {
+    max-height: 22em;
+  }
+}
+
+@media (max-width: 780px) {
+  .carousel-container img {
+    max-height: 18em;
+  }
+
+  .carousel-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 605px) {
+  .Gallery {
+    padding-left: 0;
+  }
+
+  .carousel-container {
+    padding-bottom: 2em;
+  }
+  .carousel-container img {
+    max-height: 16em;
+  }
+  .carousel-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 300px) {
+  .carousel-container {
+    width: 85%;
+  }
+}

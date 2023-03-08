@@ -1,0 +1,29 @@
+button,
+svg,
+path,
+a,
+span,
+p {
+  transition: 0.2s;
+}
+
+p {
+  line-height: 1.7;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}

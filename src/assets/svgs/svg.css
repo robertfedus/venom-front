@@ -1,0 +1,8 @@
+.social-icon {
+  fill: black;
+  cursor: pointer;
+}
+
+.social-icon:hover.social-icon path {
+  fill: var(--main-green);
+}

@@ -1,0 +1,137 @@
+.Banner {
+  background: var(--main-green);
+  height: 22em;
+  display: flex;
+  align-items: center;
+  padding: 3em;
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+.Banner .left,
+.Banner .right {
+  width: 50%;
+}
+.Banner .left {
+  text-align: left;
+}
+
+.Banner .left h1 {
+  letter-spacing: 2px;
+  color: white;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.Banner .left h1 span {
+  border-bottom: 2px solid var(--accent-green);
+}
+
+.Banner .left .description {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5em 0px 2em 0px;
+}
+
+.Banner .left .more {
+  color: var(--accent-green);
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  display: inline;
+}
+
+.Banner .left .more:hover,
+.Banner .left .more:hover .arrow-svg {
+  color: white;
+  fill: white;
+}
+
+.Banner .left .more:hover .arrow-svg {
+  margin-left: 0.6em;
+}
+
+.arrow-svg {
+  height: 10px;
+  margin-left: 0.3em;
+  fill: var(--accent-green);
+}
+
+.Banner .right {
+  text-align: right;
+}
+
+.Banner .banner-img {
+  height: 30em;
+  margin-top: 10em;
+}
+
+@media (max-width: 960px) {
+  .Banner .left {
+    width: 95%;
+  }
+
+  .Banner .left .description {
+    padding: 1em;
+  }
+
+  .Banner {
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    height: auto;
+  }
+
+  .Banner .left .description {
+    margin-top: 1.5em;
+  }
+
+  .Banner .break {
+    display: none;
+  }
+
+  .Banner .left,
+  .Banner .right {
+    text-align: center;
+  }
+
+  .Banner .banner-img {
+    margin-top: 1.5em;
+  }
+}
+
+@media (max-width: 660px) {
+  .Banner {
+    padding: 3em 0px 3em 0px;
+  }
+
+  .Banner .banner-img {
+    height: 22em;
+  }
+
+  .Banner .left h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 540px) {
+  .Banner .banner-img {
+    height: 18em;
+  }
+
+  .Banner .left h1 {
+    font-size: 20px;
+  }
+
+  .Banner .left .more {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 370px) {
+  .Banner .banner-img {
+    height: 15em;
+  }
+}
